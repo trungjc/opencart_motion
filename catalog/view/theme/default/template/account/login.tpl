@@ -1,4 +1,4 @@
-<?php echo $header; ?><?php echo $content_top; ?><div class="bg_panel socialbox"><?php echo $content_social; ?></div>
+<?php echo $header; ?><?php echo $content_top; ?>
 <div class="line-space"></div><?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content">
   <div class="breadcrumb">
