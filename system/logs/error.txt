@@ -487,3 +487,7 @@
 2011-11-12 9:19:01 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
 2011-11-12 9:19:08 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
 2011-11-12 9:19:08 - PHP Notice:  Undefined variable: content_social in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\product\product.tpl on line 1
+2011-11-12 9:50:39 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-12 9:51:06 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-12 9:51:06 - PHP Notice:  Undefined variable: content_social in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\product\manufacturer_info.tpl on line 1
+2011-11-12 9:51:12 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
