@@ -62,6 +62,7 @@ class ControllerProductManufacturer extends Controller {
 		$this->children = array(
 			'common/column_left',
 			'common/column_right',
+			'common/content_social',
 			'common/content_top',
 			'common/content_bottom',
 			'common/footer',
@@ -152,9 +153,9 @@ class ControllerProductManufacturer extends Controller {
 				'href'      => $this->url->link('product/manufacturer/product', 'manufacturer_id=' . $this->request->get['manufacturer_id'] . $url),
       			'separator' => $this->language->get('text_separator')
    			);
-		
 			$this->data['heading_title'] = $manufacturer_info['name'];
 			
+			$this->data['brand_image'] = $manufacturer_info['image'];
 			$this->data['text_empty'] = $this->language->get('text_empty');
 			$this->data['text_quantity'] = $this->language->get('text_quantity');
 			$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
@@ -377,6 +378,7 @@ class ControllerProductManufacturer extends Controller {
 			$this->children = array(
 				'common/column_left',
 				'common/column_right',
+				'common/content_social',
 				'common/content_top',
 				'common/content_bottom',
 				'common/footer',
@@ -432,6 +434,7 @@ class ControllerProductManufacturer extends Controller {
 			$this->children = array(
 				'common/column_left',
 				'common/column_right',
+				'common/content_social',
 				'common/content_top',
 				'common/content_bottom',
 				'common/footer',

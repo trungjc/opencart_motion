@@ -1,12 +1,34 @@
-<?php echo $header; ?><?php echo $content_top; ?></div>
+<?php echo $header; ?><?php echo $content_top; ?>
+<div class="bg_panel socialbox"><?php echo $content_social; ?></div>
 <div class="line-space"></div><?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content">
-  <div class="breadcrumb">
+  <!--<div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <h1><?php echo $heading_title; ?></h1>
+  <h1><?php echo $heading_title; ?></h1> -->
+  <div class="header-brand">
+
+	<div class="brand-image">
+		<img src="image/<?=$brand_image?>" alt="<?=$heading_title?>" />		
+	</div>		  
+	<div class="box-product box-product-featured half">
+				<div class="box-item">
+					<div class="image"><a href="http://localhost:8080/constant_motion/index.php?route=product/product&amp;product_id=34"><img src="http://localhost:8080/constant_motion/image/cache/data/sample-product-323x275.jpg" alt="Lust"></a></div>
+					<div class="item-info">
+				<div class="name"><a href="http://localhost:8080/constant_motion/index.php?route=product/product&amp;product_id=34">Lust</a></div>
+							<div class="price">
+							  $49.00			  			</div>
+										<div class="details"><a href="http://localhost:8080/constant_motion/index.php?route=product/product&amp;product_id=34">Details</a></div>
+				<div class="cart"><a onclick="addToCart('34');" class="button"><span>Add to Cart</span></a></div>
+			</div>
+		  </div>
+	</div>
+	<div class="brand-info">
+		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat	
+	</div>	
+  </div>  
   <?php if ($products) { ?>
   <div class="product-filter">
     <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>

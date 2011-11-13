@@ -17,18 +17,25 @@ $rss->cache_time = 1200;
 
 // Try to load and parse RSS file
 if ($rs = $rss->get($code)){
-    foreach($rs['items'] as $item) {
-    echo "<div class='blogNews'>";
-    	echo "<span>".$item['pubDate']."</span>";
-        echo "<h2>".$item['title']."</h2>";
-      
-        print $item['description'];
-        echo "<a href=\"$item[link]\" target=_blank>ReadeMore</a>";
-      
-        echo "</div>";
-        }
-   
-    }
+echo "<div class='blogNews'>";
+    for($i=0;$i <2;$i++) {
+		$last="";
+		if($i==1){
+			$last= "last";
+		}
+		$item = $rs['items'][$i];
+		echo "<div class='blogItem ".$last."'>";
+		$date = new DateTime($item['pubDate']);
+		echo "<span class='date'>".$date->format('l, F d, Y')."</span>";
+		echo "<h2 class='title'>".$item['title']."</h2>";
+		echo "<p class='contentBlog'>";
+		echo substr(strip_tags(html_entity_decode($item['description'])),0,300) . "...";
+		echo "<a class='readmore' href=\"$item[link]\" target=_blank>MORE</a>";    
+		echo "</p>";			  
+		echo "</div>";
+	}
+	echo "</div>";
+}
 else {
     echo "Error: It's not possible to reach RSS file...\n";
 }
