@@ -1768,7 +1768,7 @@ transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
 .box-product-featured .box-item .item-info .name a{
 	font-size:24px;
 	color:#FFF;
-	font-family: 'Rochester', cursive;
+	font-family: 'BallparkWeiner', cursive;
 }
 .box-product-featured .box-item .item-info .price{
 	position: absolute;
@@ -1998,4 +1998,33 @@ h1.register-account{
 #register .agree-term{
 	font-weight:bold!important;	
 	color:#1f1f1f!important;	
+}
+
+.account-box .account-content {
+	border: 1px solid #999999;
+	padding: 20px!important;
+	overflow: hidden;
+}
+.account-box .account-content li {
+	background: none;
+	width:50%;
+	float:left;
+	padding:10px 0;
+	
+}
+
+.information h1 {
+font-family:"BallparkWeiner",tahoma,serif;	
+font-size: 45px;
+color: #1f1f1f;
+}
+h2 {
+    color: #CC0000;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+hr{
+	border-bottom: 2px dotted #999999;
+	border:0;
+	height:0;
 }

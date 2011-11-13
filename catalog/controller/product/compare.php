@@ -150,6 +150,7 @@ class ControllerProductCompare extends Controller {
 			'common/column_left',
 			'common/column_right',
 			'common/content_top',
+			'common/content_social',
 			'common/content_bottom',
 			'common/footer',
 			'common/header'
