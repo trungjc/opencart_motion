@@ -1896,6 +1896,9 @@ transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
 }
 /*Brand Menu*/
 .brand-menu{}
+.brand-menu li a{
+	text-transform:uppercase;
+}
 .brand-menu li.active a{
 	color:#FF0000;
 	font-weight:bold;
@@ -1912,3 +1915,87 @@ transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
  .box-product-featured.half{
 	width: 345px;
  }
+ /*Account Login*/
+ h1.account-login{
+	text-indent:-9999px;
+	width:100%;
+	height:44px;
+	background: url('../image/account-login.png') no-repeat top left;
+	padding-bottom:10px;
+	border-bottom:2px dotted #999999;
+ }
+.new-customer,.return-customer{
+	width:100%;
+	position:relative;
+	padding-bottom:10px;
+	border-bottom:2px dotted #999999;	
+ }
+ .return-customer{
+	padding-top:30px;
+ }
+.new-customer h2,.return-customer h2,#register h2{
+	color:#cc0000;
+	font-size:12px;
+	text-transform:uppercase;
+  }
+.new-customer b,.return-customer b{
+	color:#1f1f1f;
+	text-transform:uppercase;
+}
+.return-customer  a{
+	color:#cc0000;
+	font-weight:bold;
+}  
+.new-customer .button,.return-customer  .button,#register  .button{
+	background:#cc0000;
+	width:120px;
+	text-align:center;
+	height:22px;
+}
+.new-customer .content,.return-customer .content,#register .content{
+	border:none!important;
+}
+.new-customer .button:hover,.return-customer  .button:hover,#register .button:hover{  
+	background:#cc0000;
+}
+.new-customer .button:hover span,.return-customer  .button:hover span,#register  .button:hover span{
+	background:none;
+}
+.new-customer .button span,.return-customer  .button span,#register  .button span{
+	background:none;
+	text-transform:uppercase;
+	color:#FFF;	
+	font-size:11px;
+	font-weight:bold;
+}
+/*** Account Register*/
+h1.register-account{
+	text-indent:-9999px;
+	width:100%;
+	height:46px;
+	background: url('../image/register-account.png') no-repeat top left;
+	padding-bottom:10px;
+	border-bottom:2px dotted #999999;	
+}
+#register .content,#register .content .form{
+	margin-bottom:0!important;
+}
+#register .break-line{
+	margin:0 0 20px 0 ;
+	border-bottom: 2px dotted #999;
+	width: 100%;
+}
+.exits-account a{
+	color:#cc0000;
+	font-weight:bold;	
+	text-transform:uppercase;	
+}
+#register .content table.form tr td:first-child,#register .subscribe-text{
+	font-weight:bold!important;	
+	text-transform:uppercase!important;	
+	color:#1f1f1f!important;
+}
+#register .agree-term{
+	font-weight:bold!important;	
+	color:#1f1f1f!important;	
+}

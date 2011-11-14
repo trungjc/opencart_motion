@@ -1,12 +1,13 @@
 <?php echo $header; ?><?php echo $content_top; ?>
+<div class="bg_panel socialbox"><?php echo $content_social; ?></div>
 <div class="line-space"></div><?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content">
-  <div class="breadcrumb">
+  <!--<div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
-  </div>
-  <h1><?php echo $heading_title; ?></h1>
+  </div>-->
+  <h1 class="account-login"><?php echo $heading_title; ?></h1>
   <?php if ($success) { ?>
   <div class="success"><?php echo $success; ?></div>
   <?php } ?>
@@ -14,14 +15,14 @@
   <div class="warning"><?php echo $error_warning; ?></div>
   <?php } ?>
   <div class="login-content">
-    <div class="left">
+    <div class="new-customer">
       <h2><?php echo $text_new_customer; ?></h2>
       <div class="content">
         <p><b><?php echo $text_register; ?></b></p>
         <p><?php echo $text_register_account; ?></p>
         <a href="<?php echo $register; ?>" class="button"><span><?php echo $button_continue; ?></span></a></div>
     </div>
-    <div class="right">
+    <div class="return-customer">
       <h2><?php echo $text_returning_customer; ?></h2>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="login">
         <div class="content">

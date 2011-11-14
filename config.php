@@ -1,12 +1,12 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/constant_motion/');
-define('HTTP_IMAGE', 'http://localhost/constant_motion/image/');
-define('HTTP_ADMIN', 'http://localhost/constant_motion/admin/');
+define('HTTP_SERVER', 'http://localhost:8080/constant_motion/');
+define('HTTP_IMAGE', 'http://localhost:8080/constant_motion/image/');
+define('HTTP_ADMIN', 'http://localhost:8080/constant_motion/admin/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/constant_motion/');
-define('HTTPS_IMAGE', 'http://localhost/constant_motion/image/');
+define('HTTPS_SERVER', 'http://localhost:8080/constant_motion/');
+define('HTTPS_IMAGE', 'http://localhost:8080/constant_motion/image/');
 
 // DIR
 define('DIR_APPLICATION', 'D:\xampp\htdocs\constant_motion/catalog/');
@@ -24,7 +24,7 @@ define('DIR_LOGS', 'D:\xampp\htdocs\constant_motion/system/logs/');
 define('DB_DRIVER', 'mysql');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'oct888');
 define('DB_DATABASE', 'constant_motion');
 define('DB_PREFIX', '');
 ?>

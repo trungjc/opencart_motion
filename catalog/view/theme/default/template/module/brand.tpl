@@ -5,7 +5,10 @@
       <ul class="brand-menu">
 		<?php
 		$active = "";
-		$currentBrand = $_REQUEST['manufacturer_id'] ;		
+		$currentBrand = -1;
+		if(isset($_REQUEST['manufacturer_id'])){
+			$currentBrand = $_REQUEST['manufacturer_id'] ;		
+		}
 		?>
         <?php foreach ($brands as $brand) { 
 		if($currentBrand == $brand['brand_id']){

@@ -1,16 +1,17 @@
 <?php echo $header; ?><?php echo $content_top; ?>
+<div class="bg_panel socialbox"><?php echo $content_social; ?></div>
 <div class="line-space"></div><?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content">
-  <div class="breadcrumb">
+  <!--<div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
-  </div>
-  <h1><?php echo $heading_title; ?></h1>
+  </div>-->
+  <h1 class="register-account"><?php echo $heading_title; ?></h1>
   <?php if ($error_warning) { ?>
   <div class="warning"><?php echo $error_warning; ?></div>
   <?php } ?>
-  <p><?php echo $text_account_already; ?></p>
+  <p class="exits-account"><?php echo $text_account_already; ?></p>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="register">
     <h2><?php echo $text_your_details; ?></h2>
     <div class="content">
@@ -49,6 +50,7 @@
         </tr>
       </table>
     </div>
+	<div class="break-line">&nbsp;</div>
     <h2><?php echo $text_your_address; ?> </h2>
     <div class="content">
       <table class="form">
@@ -107,6 +109,7 @@
         </tr>
       </table>
     </div>
+	<div class="break-line">&nbsp;</div>
     <h2><?php echo $text_your_password; ?></h2>
     <div class="content">
       <table class="form">
@@ -126,12 +129,13 @@
         </tr>
       </table>
     </div>
+	<div class="break-line">&nbsp;</div>
     <h2><?php echo $text_newsletter; ?></h2>
     <div class="content">
       <table class="form">
         <tr>
           <td><?php echo $entry_newsletter; ?></td>
-          <td><?php if ($newsletter == 1) { ?>
+          <td class="subscribe-text"><?php if ($newsletter == 1) { ?>
             <input type="radio" name="newsletter" value="1" checked="checked" />
             <?php echo $text_yes; ?>
             <input type="radio" name="newsletter" value="0" />
@@ -145,9 +149,10 @@
         </tr>
       </table>
     </div>
+	<div class="break-line">&nbsp;</div>
     <?php if ($text_agree) { ?>
-    <div class="buttons">
-      <div class="right"><?php echo $text_agree; ?>
+    <div class="term">
+      <div class="agree-term"><?php echo $text_agree; ?>
         <?php if ($agree) { ?>
         <input type="checkbox" name="agree" value="1" checked="checked" />
         <?php } else { ?>
@@ -156,10 +161,11 @@
         <a onclick="$('#register').submit();" class="button"><span><?php echo $button_continue; ?></span></a></div>
     </div>
     <?php } else { ?>
-    <div class="buttons">
-      <div class="right"><a onclick="$('#register').submit();" class="button"><span><?php echo $button_continue; ?></span></a></div>
+    <div class="term">
+      <div class="agree-term"><a onclick="$('#register').submit();" class="button"><span><?php echo $button_continue; ?></span></a></div>
     </div>
     <?php } ?>
+	<div class="break-line">&nbsp;</div>
   </form>
   <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--

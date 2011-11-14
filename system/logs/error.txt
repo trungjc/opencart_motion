@@ -492,3 +492,235 @@
 2011-11-12 9:51:06 - PHP Notice:  Undefined variable: content_social in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\product\manufacturer_info.tpl on line 1
 2011-11-12 9:51:12 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
 2011-11-12 10:09:33 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 17:30:11 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 17:40:31 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 17:40:31 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 17:46:43 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 17:49:49 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 17:51:37 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 17:52:59 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 17:54:14 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 17:58:48 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 17:59:45 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:00:00 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:01:52 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:02:21 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:03:11 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:03:30 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:04:07 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:05:24 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:06:23 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:06:56 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:07:09 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:07:40 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:08:27 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:13:23 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:15:46 - PHP Warning:  filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for temp/rsscache_2a0e5a1dc1741ae8e5cd1e4670581c4f in D:\xampp\htdocs\constant_motion\lastRSS.php on line 29
+2011-11-13 18:15:48 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:17:09 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:17:13 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:19:11 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:20:57 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:25:49 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:26:39 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:27:23 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:27:54 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:29:45 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:34:41 - PHP Warning:  date() expects parameter 2 to be long, string given in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 22
+2011-11-13 18:34:41 - PHP Warning:  date() expects parameter 2 to be long, string given in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 22
+2011-11-13 18:34:41 - PHP Warning:  date() expects parameter 2 to be long, string given in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 22
+2011-11-13 18:34:41 - PHP Warning:  date() expects parameter 2 to be long, string given in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 22
+2011-11-13 18:34:41 - PHP Warning:  date() expects parameter 2 to be long, string given in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 22
+2011-11-13 18:34:41 - PHP Warning:  date() expects parameter 2 to be long, string given in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 22
+2011-11-13 18:34:41 - PHP Warning:  date() expects parameter 2 to be long, string given in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 22
+2011-11-13 18:34:41 - PHP Warning:  date() expects parameter 2 to be long, string given in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 22
+2011-11-13 18:34:41 - PHP Warning:  date() expects parameter 2 to be long, string given in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 22
+2011-11-13 18:34:41 - PHP Warning:  date() expects parameter 2 to be long, string given in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 22
+2011-11-13 18:34:41 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:37:08 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:38:59 - PHP Notice:  Use of undefined constant date - assumed 'date' in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:38:59 - PHP Notice:  Use of undefined constant date - assumed 'date' in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:38:59 - PHP Notice:  Use of undefined constant date - assumed 'date' in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:38:59 - PHP Notice:  Use of undefined constant date - assumed 'date' in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:38:59 - PHP Notice:  Use of undefined constant date - assumed 'date' in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:38:59 - PHP Notice:  Use of undefined constant date - assumed 'date' in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:38:59 - PHP Notice:  Use of undefined constant date - assumed 'date' in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:38:59 - PHP Notice:  Use of undefined constant date - assumed 'date' in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:38:59 - PHP Notice:  Use of undefined constant date - assumed 'date' in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:38:59 - PHP Notice:  Use of undefined constant date - assumed 'date' in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:00 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:39:24 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:24 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:24 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:24 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:24 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:24 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:24 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:24 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:24 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:24 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:24 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:39:33 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:33 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:33 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:33 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:33 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:33 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:33 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:33 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:33 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:33 - PHP Unknown:  Object of class DateTime could not be converted to string in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\rss.tpl on line 24
+2011-11-13 18:39:33 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:40:25 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:40:37 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:41:15 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:42:48 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:43:04 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:45:05 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:45:34 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:47:20 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:47:51 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:48:00 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:53:41 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:54:15 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:54:48 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:56:25 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:57:45 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:57:54 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:58:07 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:58:44 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:58:59 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:59:21 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 18:59:39 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:06:51 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:08:49 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:15:24 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:15:41 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:16:12 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:16:41 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:16:58 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:17:18 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:19:41 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:20:13 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:20:17 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:22:50 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:22:55 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:23:29 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:25:20 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:26:25 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:26:50 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:26:54 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:27:48 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:27:52 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:28:21 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:34:32 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:37:09 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:37:09 - PHP Notice:  Undefined variable: content_social in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\product\manufacturer_info.tpl on line 2
+2011-11-13 19:39:32 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:39:32 - PHP Notice:  Undefined variable: content_social in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\product\manufacturer_info.tpl on line 2
+2011-11-13 19:40:21 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:41:28 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:43:39 - PHP Notice:  Undefined variable: request in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\brand.tpl on line 6
+2011-11-13 19:44:16 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:46:11 - PHP Notice:  Undefined variable: actvie in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\brand.tpl on line 17
+2011-11-13 19:46:11 - PHP Notice:  Undefined variable: actvie in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\brand.tpl on line 17
+2011-11-13 19:46:11 - PHP Notice:  Undefined variable: actvie in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\brand.tpl on line 17
+2011-11-13 19:46:11 - PHP Notice:  Undefined variable: actvie in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\brand.tpl on line 17
+2011-11-13 19:46:11 - PHP Notice:  Undefined variable: actvie in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\brand.tpl on line 17
+2011-11-13 19:46:11 - PHP Notice:  Undefined variable: actvie in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\brand.tpl on line 17
+2011-11-13 19:46:11 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:46:31 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:47:03 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:47:24 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:48:03 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:50:06 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:50:23 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:51:01 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 19:57:10 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:05:14 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:05:49 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:08:20 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:08:20 - PHP Notice:  Undefined variable: brand_info in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\product\manufacturer_info.tpl on line 13
+2011-11-13 20:08:37 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:09:52 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:12:55 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:15:06 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:17:07 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:17:40 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:20:13 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:23:02 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:29:20 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:35:25 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:35:49 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-13 20:35:56 - PHP Notice:  Undefined index: manufacturer_id in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\brand.tpl on line 8
+2011-11-13 20:35:56 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:26:19 - PHP Notice:  Undefined index: manufacturer_id in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\brand.tpl on line 8
+2011-11-14 11:26:26 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:32:41 - PHP Notice:  Undefined index: manufacturer_id in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\module\brand.tpl on line 9
+2011-11-14 11:32:45 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:35:14 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:43:22 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:43:54 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:44:30 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:45:12 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:47:50 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:51:33 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:52:35 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:53:17 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:54:31 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:55:28 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:56:40 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:58:56 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:59:42 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 11:59:57 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:01:29 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:04:05 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:06:47 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:07:53 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:08:36 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:09:17 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:09:32 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:10:05 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:10:54 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:12:15 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:14:20 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:14:49 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:15:47 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:16:08 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:17:08 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:17:42 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:19:17 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:21:28 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:23:19 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:23:45 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:24:32 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:24:44 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:24:49 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:26:34 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:29:28 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:30:43 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:31:03 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:31:49 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:32:34 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:32:54 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:33:27 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:34:37 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:35:23 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:35:49 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:36:01 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:37:54 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:38:34 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:39:10 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:40:14 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:41:24 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:41:26 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:41:53 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:41:54 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:44:07 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:44:39 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:46:06 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:46:36 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:46:41 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:47:12 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:47:18 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
+2011-11-14 12:47:32 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
