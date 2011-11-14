@@ -39,11 +39,11 @@ class ControllerAffiliateSuccess extends Controller {
 			$this->template = 'default/template/common/success.tpl';
 		}
 		
-	$this->children = array(
+		$this->children = array(
 			'common/column_left',
 			'common/column_right',
-			'common/content_top'
-			'common/content_social',,
+			'common/content_top',
+			'common/content_social',
 			'common/content_bottom',
 			'common/footer',
 			'common/header'		

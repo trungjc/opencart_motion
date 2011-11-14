@@ -991,3 +991,4 @@
 2011-11-14 9:19:25 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
 2011-11-14 9:21:46 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
 2011-11-14 9:21:46 - PHP Notice:  Undefined variable: content_social in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\account\password.tpl on line 2
+2011-11-14 9:41:35 - PHP Notice:  Undefined variable: home in D:\xampp\htdocs\constant_motion\catalog\view\theme\default\template\common\footer.tpl on line 3
