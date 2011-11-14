@@ -389,14 +389,15 @@ class ControllerAccountOrder extends Controller {
 			}
 			
 			$this->children = array(
-				'common/column_left',
-				'common/column_right',
-				'common/content_top',
-				'common/content_bottom',
-				'common/footer',
-				'common/header'	
-			);
-								
+			'common/column_left',
+			'common/column_right',
+			'common/content_top'
+			'common/content_social',,
+			'common/content_bottom',
+			'common/footer',
+			'common/header'		
+		);
+							
 			$this->response->setOutput($this->render());		
     	} else {
 			$this->document->setTitle($this->language->get('text_order'));
