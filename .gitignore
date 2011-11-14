@@ -2,3 +2,6 @@
 /old
 config.php
 /admin/config.php
+/system/logs/error.txt
+/config.php
+/admin/config.php
