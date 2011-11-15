@@ -1,4 +1,7 @@
 $(document).ready(function() {
+$('.socialbox input[type=text]').focus(function(){
+	$(this).val('');
+})
 	/* Search */
 	$('.button-search').bind('click', function() {
 		url = $('base').attr('href') + 'index.php?route=product/search';
