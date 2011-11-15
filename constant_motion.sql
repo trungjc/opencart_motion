@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 15, 2011 at 02:07 PM
+-- Generation Time: Nov 15, 2011 at 06:10 PM
 -- Server version: 5.0.91
 -- PHP Version: 5.2.17
 
@@ -16,7 +16,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `constant_motion`
+-- Database: `constant_motions`
 --
 
 -- --------------------------------------------------------
@@ -859,7 +859,7 @@ CREATE TABLE IF NOT EXISTS `currency` (
 
 INSERT INTO `currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
 (1, 'Pound Sterling', 'GBP', '£', '', '2', 0.62900001, 1, '2011-11-15 02:37:11'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2011-11-15 02:37:11'),
+(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2011-11-15 09:42:06'),
 (3, 'Euro', 'EUR', '', '€', '2', 0.73379999, 1, '2011-11-15 02:37:11');
 
 -- --------------------------------------------------------
@@ -1439,16 +1439,16 @@ INSERT INTO `option_value` (`option_value_id`, `option_id`, `image`, `sort_order
 (32, 1, '', 1),
 (45, 2, '', 4),
 (44, 2, '', 3),
-(42, 5, '', 4),
-(41, 5, '', 3),
-(39, 5, '', 1),
-(40, 5, '', 2),
+(41, 5, 'no_image.jpg', 3),
+(42, 5, 'no_image.jpg', 4),
 (31, 1, '', 2),
 (23, 2, '', 1),
 (24, 2, '', 2),
 (46, 11, '', 1),
 (47, 11, '', 2),
-(48, 11, '', 3);
+(48, 11, '', 3),
+(39, 5, 'no_image.jpg', 1),
+(40, 5, 'no_image.jpg', 2);
 
 -- --------------------------------------------------------
 
@@ -1474,15 +1474,15 @@ INSERT INTO `option_value_description` (`option_value_id`, `language_id`, `optio
 (45, 1, 2, 'Checkbox 4'),
 (44, 1, 2, 'Checkbox 3'),
 (31, 1, 1, 'Medium'),
-(42, 1, 5, 'Yellow'),
-(41, 1, 5, 'Green'),
 (39, 1, 5, 'Red'),
-(40, 1, 5, 'Blue'),
+(41, 1, 5, 'Green'),
+(42, 1, 5, 'Yellow'),
 (23, 1, 2, 'Checkbox 1'),
 (24, 1, 2, 'Checkbox 2'),
 (48, 1, 11, 'Large'),
 (47, 1, 11, 'Medium'),
-(46, 1, 11, 'Small');
+(46, 1, 11, 'Small'),
+(40, 1, 5, 'Blue');
 
 -- --------------------------------------------------------
 
@@ -1744,20 +1744,20 @@ INSERT INTO `product` (`product_id`, `model`, `sku`, `upc`, `location`, `quantit
 (30, 'Product 3', '', '', '', 7, 6, 'data/canon_eos_5d_1.jpg', 9, 1, '100.0000', 0, 9, '2009-02-03', '0.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 0, 1, '2009-02-03 16:59:00', '2011-09-30 01:05:23', 0),
 (31, 'Product 4', '', '', '', 1000, 6, 'data/nikon_d300_1.jpg', 0, 1, '80.0000', 0, 9, '2009-02-03', '0.00', 1, '0.00', '0.00', '0.00', 3, 1, 1, 0, 1, '2009-02-03 17:00:10', '2011-09-30 01:06:00', 0),
 (32, 'Product 5', '', '', '', 999, 6, 'data/sample-product-2.png', 8, 1, '31.0000', 0, 9, '2009-02-03', '5.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 0, 1, '2009-02-03 17:07:26', '2011-11-12 20:20:14', 0),
-(33, 'Product 6', '', '', '', 1000, 6, 'data/samsung_syncmaster_941bw.jpg', 0, 1, '200.0000', 0, 9, '2009-02-03', '5.00', 1, '0.00', '0.00', '0.00', 2, 1, 1, 0, 1, '2009-02-03 17:08:31', '2011-09-30 01:06:29', 0),
+(33, 'Product 6', '', '', '', 1000, 6, 'data/samsung_syncmaster_941bw.jpg', 0, 1, '200.0000', 0, 9, '2009-02-03', '5.00', 1, '0.00', '0.00', '0.00', 2, 1, 1, 0, 1, '2009-02-03 17:08:31', '2011-09-30 01:06:29', 9),
 (34, 'Product 7', '', '', '', 1000, 6, 'data/sample-product.jpg', 8, 1, '40.0000', 0, 9, '2009-02-03', '5.00', 1, '0.00', '0.00', '0.00', 2, 1, 1, 0, 1, '2009-02-03 18:07:54', '2011-11-12 19:31:53', 5),
 (35, 'Product 8', '', '', '', 1000, 5, '', 0, 0, '100.0000', 0, 9, '2009-02-03', '5.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 0, 1, '2009-02-03 18:08:31', '2011-09-30 01:06:17', 1),
 (36, 'Product 9', '', '', '', 994, 6, 'data/ipod_nano_1.jpg', 8, 0, '100.0000', 100, 9, '2009-02-03', '5.00', 1, '0.00', '0.00', '0.00', 2, 1, 1, 0, 1, '2009-02-03 18:09:19', '2011-09-30 01:07:12', 0),
 (40, 'product 11', '', '', '', 970, 5, 'data/iphone_1.jpg', 8, 1, '101.0000', 0, 9, '2009-02-03', '10.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 0, 1, '2009-02-03 21:07:12', '2011-09-30 01:06:53', 1),
 (41, 'Product 14', '', '', '', 977, 5, 'data/imac_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 0, 1, '2009-02-03 21:07:26', '2011-09-30 01:06:44', 0),
 (42, 'Product 15', '', '', '', 990, 5, 'data/apple_cinema_30.jpg', 8, 1, '100.0000', 400, 9, '2009-02-04', '12.50', 1, '1.00', '2.00', '3.00', 1, 1, 2, 0, 1, '2009-02-03 21:07:37', '2011-09-30 00:46:19', 0),
-(43, 'Product 16', '', '', '', 929, 5, 'data/macbook_1.jpg', 8, 0, '500.0000', 0, 9, '2009-02-03', '0.00', 1, '0.00', '0.00', '0.00', 2, 1, 1, 0, 1, '2009-02-03 21:07:49', '2011-09-30 01:05:46', 5),
+(43, 'Product 16', '', '', '', 929, 5, 'data/macbook_1.jpg', 8, 0, '500.0000', 0, 9, '2009-02-03', '0.00', 1, '0.00', '0.00', '0.00', 2, 1, 1, 0, 1, '2009-02-03 21:07:49', '2011-09-30 01:05:46', 6),
 (44, 'Product 17', '', '', '', 1000, 5, 'data/macbook_air_1.jpg', 8, 1, '1000.0000', 0, 9, '2009-02-03', '0.00', 1, '0.00', '0.00', '0.00', 2, 1, 1, 0, 1, '2009-02-03 21:08:00', '2011-09-30 01:05:53', 1),
 (45, 'Product 18', '', '', '', 998, 5, 'data/macbook_pro_1.jpg', 8, 1, '2000.0000', 0, 100, '2009-02-03', '0.00', 1, '0.00', '0.00', '0.00', 2, 1, 1, 0, 1, '2009-02-03 21:08:17', '2011-09-15 22:22:01', 0),
 (46, 'Product 19', '', '', '', 1000, 5, 'data/sony_vaio_1.jpg', 10, 1, '1000.0000', 0, 9, '2009-02-03', '0.00', 1, '0.00', '0.00', '0.00', 2, 1, 1, 0, 1, '2009-02-03 21:08:29', '2011-09-30 01:06:39', 1),
-(47, 'Product 21', '', '', '', 1000, 5, 'data/hp_1.jpg', 7, 1, '100.0000', 400, 9, '2009-02-03', '1.00', 1, '0.00', '0.00', '0.00', 1, 0, 1, 0, 1, '2009-02-03 21:08:40', '2011-09-30 01:05:28', 3),
+(47, 'Product 21', '', '', '', 1000, 5, 'data/hp_1.jpg', 7, 1, '100.0000', 400, 9, '2009-02-03', '1.00', 1, '0.00', '0.00', '0.00', 1, 0, 1, 0, 1, '2009-02-03 21:08:40', '2011-09-30 01:05:28', 14),
 (48, 'product 20', 'test 1', '', 'test 2', 995, 5, 'data/ipod_classic_1.jpg', 8, 1, '100.0000', 0, 9, '2009-02-08', '1.00', 1, '0.00', '0.00', '0.00', 2, 1, 1, 0, 1, '2009-02-08 17:21:51', '2011-09-30 01:07:06', 4),
-(49, 'SAM1', '', '', '', 0, 8, 'data/samsung_tab_1.jpg', 0, 1, '199.9900', 0, 9, '2011-04-25', '0.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 1, 1, '2011-04-26 08:57:34', '2011-09-30 01:06:23', 5);
+(49, 'SAM1', '', '', '', 10, 8, 'data/samsung_tab_1.jpg', 0, 1, '199.9900', 0, 9, '2011-04-25', '0.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 1, 1, '2011-04-26 08:57:34', '2011-11-15 17:43:04', 18);
 
 -- --------------------------------------------------------
 
@@ -1822,7 +1822,7 @@ INSERT INTO `product_description` (`product_id`, `language_id`, `name`, `descrip
 (34, 1, 'Lust', '&lt;div&gt;\r\n	&lt;strong&gt;Born to be worn.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to make your musical fashion statement.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Random meets rhythm.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		With iTunes autofill, iPod shuffle can deliver a new musical experience every time you sync. For more randomness, you can shuffle songs during playback with the slide of a switch.&lt;/p&gt;\r\n	&lt;strong&gt;Everything is easy.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Charge and sync with the included USB dock. Operate the iPod shuffle controls with one hand. Enjoy up to 12 hours straight of skip-free music playback.&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', ''),
 (43, 1, 'MacBook', '&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Intel Core 2 Duo processor&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest ever.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;1GB memory, larger hard drives&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		The new MacBook now comes with 1GB of memory standard and larger hard drives for the entire line perfect for running more of your favorite applications and storing growing media collections.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Sleek, 1.08-inch-thin design&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		MacBook makes it easy to hit the road thanks to its tough polycarbonate case, built-in wireless technologies, and innovative MagSafe Power Adapter that releases automatically if someone accidentally trips on the cord.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Built-in iSight camera&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Right out of the box, you can have a video chat with friends or family,2 record a video at your desk, or take fun pictures with Photo Booth&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', ''),
 (31, 1, 'Nikon D300', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		Engineered with pro-level features and performance, the 12.3-effective-megapixel D300 combines brand new technologies with advanced features inherited from Nikon&amp;#39;s newly announced D3 professional digital SLR camera to offer serious photographers remarkable performance combined with agility.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		Similar to the D3, the D300 features Nikon&amp;#39;s exclusive EXPEED Image Processing System that is central to driving the speed and processing power needed for many of the camera&amp;#39;s new features. The D300 features a new 51-point autofocus system with Nikon&amp;#39;s 3D Focus Tracking feature and two new LiveView shooting modes that allow users to frame a photograph using the camera&amp;#39;s high-resolution LCD monitor. The D300 shares a similar Scene Recognition System as is found in the D3; it promises to greatly enhance the accuracy of autofocus, autoexposure, and auto white balance by recognizing the subject or scene being photographed and applying this information to the calculations for the three functions.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 reacts with lightning speed, powering up in a mere 0.13 seconds and shooting with an imperceptible 45-millisecond shutter release lag time. The D300 is capable of shooting at a rapid six frames per second and can go as fast as eight frames per second when using the optional MB-D10 multi-power battery pack. In continuous bursts, the D300 can shoot up to 100 shots at full 12.3-megapixel resolution. (NORMAL-LARGE image setting, using a SanDisk Extreme IV 1GB CompactFlash card.)&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 incorporates a range of innovative technologies and features that will significantly improve the accuracy, control, and performance photographers can get from their equipment. Its new Scene Recognition System advances the use of Nikon&amp;#39;s acclaimed 1,005-segment sensor to recognize colors and light patterns that help the camera determine the subject and the type of scene being photographed before a picture is taken. This information is used to improve the accuracy of autofocus, autoexposure, and auto white balance functions in the D300. For example, the camera can track moving subjects better and by identifying them, it can also automatically select focus points faster and with greater accuracy. It can also analyze highlights and more accurately determine exposure, as well as infer light sources to deliver more accurate white balance detection.&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', ''),
-(49, 1, 'Samsung Galaxy Tab 10.1', '&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world&amp;rsquo;s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 &amp;ndash; includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick &amp;ndash; a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader&amp;rsquo;s Hub, Music Hub and Samsung Mini Apps Tray &amp;ndash; which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;&amp;auml;&amp;ouml;&lt;/p&gt;\r\n', '', ''),
+(49, 1, 'Samsung Galaxy Tab 10.1', '&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world’s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 – includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick – a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader’s Hub, Music Hub and Samsung Mini Apps Tray – which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;äö&lt;/p&gt;\r\n', '', ''),
 (42, 1, 'Apple Cinema 30&quot;', '&lt;p&gt;\r\n	&lt;font face=&quot;helvetica,geneva,arial&quot; size=&quot;2&quot;&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there&amp;#39;s no limit to what you can achieve. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it&amp;#39;s designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple&amp;#39;s ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. &lt;br /&gt;\r\n	&lt;br /&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.&lt;br /&gt;\r\n	&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;\r\n&lt;h3&gt;\r\n	Features:&lt;/h3&gt;\r\n&lt;p&gt;\r\n	Unrivaled display performance&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wide-format design for simultaneous display of two full pages of text and graphics.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Lightning-fast pixel response for full-motion digital video playback.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 16.7 million saturated colors, for use in all graphics-intensive applications.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Simple setup and operation&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Single cable with elegant breakout for connection to DVI, USB and FireWire ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports to support iSight and other desktop peripherals&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Sleek, elegant design&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Huge virtual workspace, very small footprint.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Narrow Bezel design to minimize visual impact of using dual displays&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Unique hinge design for effortless adjustment&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;\r\n	Technical specifications&lt;/h3&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen size (diagonal viewable image size)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Apple Cinema HD Display: 30 inches (29.7-inch viewable)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen type&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Resolutions&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		2560 x 1600 pixels (optimum resolution)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Display colors (maximum)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16.7 million&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Viewing angle (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		170&amp;deg; horizontal; 170&amp;deg; vertical&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Brightness (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 400 cd/m2&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Contrast ratio (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Response time (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Pixel pitch&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 0.250 mm&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen treatment&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Antiglare hardcoat&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;User controls (hardware and software)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Display Power,&lt;/li&gt;\r\n	&lt;li&gt;\r\n		System sleep, wake&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Brightness&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Monitor tilt&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Connectors and cables&lt;/b&gt;&lt;br /&gt;\r\n	Cable&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		DVI (Digital Visual Interface)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n	&lt;li&gt;\r\n		DC power (24 V)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Connectors&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Two-port, self-powered USB 2.0 hub&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Kensington security port&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA mount adapter&lt;/b&gt;&lt;br /&gt;\r\n	Requires optional Cinema Display VESA Mount Adapter (M9649G/A)&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Compatible with VESA FDMI (MIS-D, 100, C) compliant mounting solutions&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Electrical requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Input voltage: 100-240 VAC 50-60Hz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum power when operating: 150W&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Energy saver mode: 3W or less&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Environmental requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Operating temperature: 50&amp;deg; to 95&amp;deg; F (10&amp;deg; to 35&amp;deg; C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Storage temperature: -40&amp;deg; to 116&amp;deg; F (-40&amp;deg; to 47&amp;deg; C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Operating humidity: 20% to 80% noncondensing&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum operating altitude: 10,000 feet&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Agency approvals&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n	&lt;li&gt;\r\n		TCO &amp;#39;03&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Size and weight&lt;/b&gt;&lt;br /&gt;\r\n	30-inch Apple Cinema HD Display&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Height: 21.3 inches (54.3 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Width: 27.2 inches (68.8 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Depth: 8.46 inches (21.5 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Weight: 27.5 pounds (12.5 kg)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;System Requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Mac Pro, all graphic options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) with ATI Radeon 9650 or better or NVIDIA GeForce 6800 GT DDL or better&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), all graphics options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		PowerBook G4 with dual-link DVI support&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows PC and graphics card that supports DVI ports with dual-link digital bandwidth and VESA DDC standard for plug-and-play setup&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', ''),
 (30, 1, 'Canon EOS 5D', '&lt;p&gt;\r\n	Canon''s press material for the EOS 5D states that it ''defines (a) new D-SLR category'', while we''re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably ''chunkier''). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR''s, an important difference when compared to the latter is that the EOS 5D doesn''t have any environmental seals. While Canon don''t specifically refer to the EOS 5D as a ''professional'' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they''ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n', '', '');
 
@@ -1867,7 +1867,7 @@ CREATE TABLE IF NOT EXISTS `product_image` (
   `image` varchar(255) collate utf8_bin default NULL,
   `sort_order` int(3) NOT NULL default '0',
   PRIMARY KEY  (`product_image_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2362 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2368 ;
 
 --
 -- Dumping data for table `product_image`
@@ -1924,12 +1924,9 @@ INSERT INTO `product_image` (`product_image_id`, `product_id`, `image`, `sort_or
 (1987, 29, 'data/palm_treo_pro_2.jpg', 0),
 (1993, 46, 'data/sony_vaio_2.jpg', 0),
 (1992, 46, 'data/sony_vaio_3.jpg', 0),
-(2327, 49, 'data/samsung_tab_7.jpg', 0),
-(2326, 49, 'data/samsung_tab_6.jpg', 0),
-(2325, 49, 'data/samsung_tab_5.jpg', 0),
-(2324, 49, 'data/samsung_tab_4.jpg', 0),
-(2323, 49, 'data/samsung_tab_3.jpg', 0),
-(2322, 49, 'data/samsung_tab_2.jpg', 0),
+(2367, 49, 'data/samsung_tab_7.jpg', 0),
+(2366, 49, 'data/samsung_tab_6.jpg', 0),
+(2365, 49, 'data/samsung_tab_5.jpg', 0),
 (2317, 42, 'data/canon_logo.jpg', 0),
 (2316, 42, 'data/hp_1.jpg', 0),
 (2315, 42, 'data/compaq_presario.jpg', 0),
@@ -2048,7 +2045,7 @@ CREATE TABLE IF NOT EXISTS `product_reward` (
   `customer_group_id` int(11) NOT NULL default '0',
   `points` int(8) NOT NULL default '0',
   PRIMARY KEY  (`product_reward_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=551 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=555 ;
 
 --
 -- Dumping data for table `product_reward`
@@ -2091,8 +2088,8 @@ INSERT INTO `product_reward` (`product_reward_id`, `product_id`, `customer_group
 (547, 34, 8, 0),
 (550, 32, 6, 0),
 (549, 32, 8, 0),
-(522, 49, 6, 1000),
-(521, 49, 8, 1000);
+(554, 49, 6, 1000),
+(553, 49, 8, 1000);
 
 -- --------------------------------------------------------
 
@@ -2446,7 +2443,7 @@ CREATE TABLE IF NOT EXISTS `setting` (
   `value` text collate utf8_bin NOT NULL,
   `serialized` tinyint(1) NOT NULL,
   PRIMARY KEY  (`setting_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=25029 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=25490 ;
 
 --
 -- Dumping data for table `setting`
@@ -2468,17 +2465,8 @@ INSERT INTO `setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `seria
 (20443, 0, 'cod', 'cod_status', '1', 0),
 (9456, 0, 'shipping', 'shipping_status', '1', 0),
 (9455, 0, 'shipping', 'shipping_estimator', '1', 0),
-(24570, 0, 'config', 'config_smtp_timeout', '5', 0),
-(24569, 0, 'config', 'config_smtp_port', '25', 0),
-(24568, 0, 'config', 'config_smtp_password', '', 0),
-(24566, 0, 'config', 'config_smtp_host', '', 0),
-(24567, 0, 'config', 'config_smtp_username', '', 0),
-(24565, 0, 'config', 'config_mail_parameter', '', 0),
-(24564, 0, 'config', 'config_mail_protocol', 'mail', 0),
 (13801, 0, 'coupon', 'coupon_sort_order', '4', 0),
 (13800, 0, 'coupon', 'coupon_status', '1', 0),
-(24563, 0, 'config', 'config_image_cart_height', '80', 0),
-(24562, 0, 'config', 'config_image_cart_width', '80', 0),
 (20422, 0, 'flat', 'flat_sort_order', '1', 0),
 (20421, 0, 'flat', 'flat_status', '1', 0),
 (20420, 0, 'flat', 'flat_geo_zone_id', '0', 0),
@@ -2489,65 +2477,44 @@ INSERT INTO `setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `seria
 (20418, 0, 'flat', 'flat_cost', '5.00', 0),
 (9444, 0, 'credit', 'credit_sort_order', '7', 0),
 (9443, 0, 'credit', 'credit_status', '1', 0),
-(24561, 0, 'config', 'config_image_wishlist_height', '50', 0),
-(24560, 0, 'config', 'config_image_wishlist_width', '50', 0),
-(24559, 0, 'config', 'config_image_compare_height', '90', 0),
-(24558, 0, 'config', 'config_image_compare_width', '90', 0),
-(24557, 0, 'config', 'config_image_related_height', '80', 0),
-(24556, 0, 'config', 'config_image_related_width', '80', 0),
 (18432, 0, 'reward', 'reward_sort_order', '2', 0),
 (18431, 0, 'reward', 'reward_status', '1', 0),
 (24310, 0, 'affiliate', 'affiliate_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:2:"10";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}', 1),
 (25011, 0, 'category', 'category_module', 'a:12:{i:0;a:4:{s:9:"layout_id";s:1:"6";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:1;a:4:{s:9:"layout_id";s:2:"10";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:2;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:3;a:4:{s:9:"layout_id";s:1:"7";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:4;a:4:{s:9:"layout_id";s:1:"8";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:5;a:4:{s:9:"layout_id";s:1:"4";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:6;a:4:{s:9:"layout_id";s:1:"1";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:7;a:4:{s:9:"layout_id";s:2:"11";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:8;a:4:{s:9:"layout_id";s:1:"5";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:9;a:4:{s:9:"layout_id";s:1:"5";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:10;a:4:{s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}i:11;a:4:{s:9:"layout_id";s:1:"9";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}}', 1),
-(24555, 0, 'config', 'config_image_additional_height', '74', 0),
-(24554, 0, 'config', 'config_image_additional_width', '74', 0),
-(24553, 0, 'config', 'config_image_product_height', '80', 0),
-(24551, 0, 'config', 'config_image_popup_height', '500', 0),
-(24552, 0, 'config', 'config_image_product_width', '80', 0),
-(24550, 0, 'config', 'config_image_popup_width', '500', 0),
-(24549, 0, 'config', 'config_image_thumb_height', '228', 0),
-(24548, 0, 'config', 'config_image_thumb_width', '228', 0),
-(24547, 0, 'config', 'config_image_category_height', '80', 0),
-(24546, 0, 'config', 'config_image_category_width', '80', 0),
-(24545, 0, 'config', 'config_icon', 'data/cart.png', 0),
-(24544, 0, 'config', 'config_logo', 'data/logo.png', 0),
-(24543, 0, 'config', 'config_cart_weight', '1', 0),
-(24542, 0, 'config', 'config_upload_allowed', 'jpg, JPG, jpeg, gif, png, txt', 0),
-(24541, 0, 'config', 'config_download', '1', 0),
-(24540, 0, 'config', 'config_review_status', '1', 0),
-(24539, 0, 'config', 'config_return_status_id', '2', 0),
-(24538, 0, 'config', 'config_complete_status_id', '5', 0),
-(24537, 0, 'config', 'config_order_status_id', '1', 0),
-(24536, 0, 'config', 'config_stock_status_id', '5', 0),
-(24535, 0, 'config', 'config_stock_checkout', '0', 0),
-(24534, 0, 'config', 'config_stock_warning', '0', 0),
-(24533, 0, 'config', 'config_stock_display', '0', 0),
-(24532, 0, 'config', 'config_commission', '5', 0),
-(24531, 0, 'config', 'config_affiliate_id', '4', 0),
-(24530, 0, 'config', 'config_checkout_id', '5', 0),
-(24529, 0, 'config', 'config_account_id', '3', 0),
+(25489, 0, 'config', 'config_google_analytics', '', 0),
+(25488, 0, 'config', 'config_error_filename', 'error.txt', 0),
+(25487, 0, 'config', 'config_error_log', '1', 0),
+(25486, 0, 'config', 'config_error_display', '1', 0),
+(25485, 0, 'config', 'config_compression', '0', 0),
+(25484, 0, 'config', 'config_encryption', '12345', 0),
+(25483, 0, 'config', 'config_maintenance', '0', 0),
+(25482, 0, 'config', 'config_seo_url', '0', 0),
+(25481, 0, 'config', 'config_use_ssl', '0', 0),
+(25478, 0, 'config', 'config_alert_mail', '0', 0),
+(25479, 0, 'config', 'config_account_mail', '0', 0),
+(25480, 0, 'config', 'config_alert_emails', '', 0),
+(25477, 0, 'config', 'config_smtp_timeout', '5', 0),
+(25476, 0, 'config', 'config_smtp_port', '25', 0),
+(25475, 0, 'config', 'config_smtp_password', '', 0),
+(25473, 0, 'config', 'config_smtp_host', '', 0),
+(25474, 0, 'config', 'config_smtp_username', '', 0),
+(25471, 0, 'config', 'config_mail_protocol', 'mail', 0),
+(25467, 0, 'config', 'config_image_wishlist_width', '50', 0),
 (16017, 0, 'voucher', 'voucher_sort_order', '8', 0),
 (16016, 0, 'voucher', 'voucher_status', '1', 0),
-(24528, 0, 'config', 'config_guest_checkout', '1', 0),
-(24527, 0, 'config', 'config_customer_approval', '0', 0),
-(24526, 0, 'config', 'config_customer_price', '0', 0),
-(24525, 0, 'config', 'config_customer_group_id', '8', 0),
+(25472, 0, 'config', 'config_mail_parameter', '', 0),
+(25469, 0, 'config', 'config_image_cart_width', '80', 0),
+(25470, 0, 'config', 'config_image_cart_height', '80', 0),
 (19410, 0, 'free_checkout', 'free_checkout_status', '1', 0),
 (19409, 0, 'free_checkout', 'free_checkout_order_status_id', '1', 0),
-(24524, 0, 'config', 'config_invoice_prefix', 'INV-2011-00', 0),
-(24523, 0, 'config', 'config_tax_customer', 'shipping', 0),
+(25468, 0, 'config', 'config_image_wishlist_height', '50', 0),
 (25028, 0, 'slideshow', 'slideshow_module', 'a:11:{i:0;a:7:{s:9:"banner_id";s:1:"9";s:5:"width";s:3:"998";s:6:"height";s:3:"332";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:1;a:7:{s:9:"banner_id";s:1:"9";s:5:"width";s:3:"998";s:6:"height";s:3:"332";s:9:"layout_id";s:1:"3";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:2;a:7:{s:9:"banner_id";s:1:"9";s:5:"width";s:3:"998";s:6:"height";s:3:"332";s:9:"layout_id";s:1:"2";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:3;a:7:{s:9:"banner_id";s:1:"9";s:5:"width";s:3:"998";s:6:"height";s:3:"332";s:9:"layout_id";s:1:"5";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:4;a:7:{s:9:"banner_id";s:1:"9";s:5:"width";s:3:"998";s:6:"height";s:3:"332";s:9:"layout_id";s:1:"6";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:5;a:7:{s:9:"banner_id";s:1:"9";s:5:"width";s:3:"998";s:6:"height";s:3:"332";s:9:"layout_id";s:2:"10";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:6;a:7:{s:9:"banner_id";s:1:"9";s:5:"width";s:3:"998";s:6:"height";s:3:"332";s:9:"layout_id";s:1:"7";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:7;a:7:{s:9:"banner_id";s:1:"9";s:5:"width";s:3:"998";s:6:"height";s:3:"332";s:9:"layout_id";s:1:"8";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:8;a:7:{s:9:"banner_id";s:1:"9";s:5:"width";s:3:"998";s:6:"height";s:3:"332";s:9:"layout_id";s:1:"4";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:9;a:7:{s:9:"banner_id";s:1:"9";s:5:"width";s:3:"998";s:6:"height";s:3:"332";s:9:"layout_id";s:2:"11";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:10;a:7:{s:9:"banner_id";s:1:"9";s:5:"width";s:3:"998";s:6:"height";s:3:"332";s:9:"layout_id";s:1:"9";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}', 1),
 (24290, 0, 'banner', 'banner_module', 'a:1:{i:0;a:7:{s:9:"banner_id";s:1:"6";s:5:"width";s:3:"182";s:6:"height";s:3:"182";s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"0";s:10:"sort_order";s:1:"3";}}', 1),
-(24522, 0, 'config', 'config_tax_default', 'shipping', 0),
-(24520, 0, 'config', 'config_admin_limit', '20', 0),
-(24521, 0, 'config', 'config_tax', '1', 0),
-(24519, 0, 'config', 'config_catalog_limit', '15', 0),
-(24517, 0, 'config', 'config_length_class_id', '1', 0),
-(24518, 0, 'config', 'config_weight_class_id', '1', 0),
-(24516, 0, 'config', 'config_currency_auto', '1', 0),
-(24515, 0, 'config', 'config_currency', 'USD', 0),
-(24514, 0, 'config', 'config_admin_language', 'en', 0),
-(24513, 0, 'config', 'config_language', 'en', 0),
+(25466, 0, 'config', 'config_image_compare_height', '90', 0),
+(25465, 0, 'config', 'config_image_compare_width', '90', 0),
+(25464, 0, 'config', 'config_image_related_height', '80', 0),
+(25463, 0, 'config', 'config_image_related_width', '80', 0),
+(25462, 0, 'config', 'config_image_additional_height', '142', 0),
 (24692, 0, 'store', 'store_module', 'a:1:{i:0;a:4:{s:9:"layout_id";s:1:"1";s:8:"position";s:11:"column_left";s:6:"status";s:1:"0";s:10:"sort_order";s:1:"1";}}', 1),
 (24691, 0, 'store', 'store_admin', '0', 0),
 (24864, 0, 'featured', 'product', '', 0),
@@ -2559,81 +2526,57 @@ INSERT INTO `setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `seria
 (25019, 0, 'cr2htmlmodule', 'cr2htmlmodule_borderless2', '0', 0),
 (25020, 0, 'cr2htmlmodule', 'cr2htmlmodule_code2_1', '&lt;ul class=&quot;social&quot;&gt;\r\n	&lt;li&gt;\r\n		&lt;a href=&quot;http://facebook.com/trungjc&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;image/data/btn_facebook.jpg&quot; style=&quot;width: 59px; height: 22px; &quot; /&gt;&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;\r\n		&lt;a href=&quot;http://twiter.com/trungjc&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;image/data/btn_twitter.jpg&quot; style=&quot;width: 59px; height: 22px; &quot; /&gt;&lt;/a&gt;&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;div class=&quot;contactInfor&quot;&gt;\r\n	&lt;strong&gt;CONTACT US &lt;/strong&gt;&lt;a href=&quot;mailtoinfo@cnstntmotion.com:&quot;&gt;info@cnstntmotion.com&lt;/a&gt;&lt;/div&gt;\r\n&lt;div class=&quot;contactInfor&quot;&gt;\r\n	&amp;nbsp;&lt;/div&gt;\r\n&lt;form action=&quot;http://feedburner.google.com/fb/a/mailverify&quot; method=&quot;post&quot; onsubmit=&quot;window.open(''http://feedburner.google.com/fb/a/mailverify?uri=Tutsplust'', ''popupwindow'', ''scrollbars=yes,width=550,height=520'');return true&quot; target=&quot;popupwindow&quot;&gt;\r\n	&lt;label&gt;&lt;b&gt;SIGN UP&lt;/b&gt; TO RECEIVE THE LATEST NEWS&lt;/label&gt;&lt;input class=&quot;search&quot; name=&quot;email&quot; type=&quot;text&quot; value=&quot;Enter your email&quot; /&gt;&lt;input name=&quot;uri&quot; type=&quot;hidden&quot; value=&quot;Tutsplust&quot; /&gt;&lt;input name=&quot;loc&quot; type=&quot;hidden&quot; value=&quot;en_US&quot; /&gt;&lt;input class=&quot;send&quot; type=&quot;submit&quot; value=&quot;Subscribe&quot; /&gt;&amp;nbsp;&lt;/form&gt;\r\n&lt;p&gt;\r\n	&amp;nbsp;&lt;/p&gt;\r\n', 0),
 (24701, 0, 'custom', 'custom_module', 'a:1:{i:1;a:5:{s:11:"description";a:1:{i:1;s:176:"&lt;p&gt;\r\n	&lt;img alt=&quot;&quot; src=&quot;http://localhost/constant_motion/image/data/apple_logo.jpg&quot; style=&quot;width: 320px; height: 320px;&quot; /&gt;&lt;/p&gt;\r\n";}s:9:"layout_id";s:1:"1";s:8:"position";s:12:"column_right";s:6:"status";s:1:"0";s:10:"sort_order";s:0:"";}}', 1),
-(24571, 0, 'config', 'config_alert_mail', '0', 0),
-(24512, 0, 'config', 'config_zone_id', '3563', 0),
-(24511, 0, 'config', 'config_country_id', '222', 0),
-(24510, 0, 'config', 'config_layout_id', '4', 0),
-(24509, 0, 'config', 'config_template', 'default', 0),
-(24508, 0, 'config', 'config_meta_description', 'the seventh letter', 0),
-(24507, 0, 'config', 'config_title', 'the seventh letter', 0),
-(24506, 0, 'config', 'config_fax', '', 0),
-(24505, 0, 'config', 'config_telephone', '123456789', 0),
-(24504, 0, 'config', 'config_email', 'trungnguyenthanh70@gmail.com', 0),
-(24503, 0, 'config', 'config_address', 'the seventh letter', 0),
-(24502, 0, 'config', 'config_owner', 'the seventh letter', 0),
-(24501, 0, 'config', 'config_name', 'the seventh letter', 0),
-(24682, 1, 'config', 'config_image_cart_width', '80', 0),
-(24681, 1, 'config', 'config_image_wishlist_height', '50', 0),
-(24679, 1, 'config', 'config_image_compare_height', '90', 0),
-(24678, 1, 'config', 'config_image_compare_width', '90', 0),
-(24676, 1, 'config', 'config_image_related_width', '80', 0),
-(24677, 1, 'config', 'config_image_related_height', '80', 0),
-(24674, 1, 'config', 'config_image_additional_width', '74', 0),
-(24675, 1, 'config', 'config_image_additional_height', '74', 0),
-(24673, 1, 'config', 'config_image_product_height', '80', 0),
-(24672, 1, 'config', 'config_image_product_width', '80', 0),
-(24671, 1, 'config', 'config_image_popup_height', '500', 0),
-(24669, 1, 'config', 'config_image_thumb_height', '228', 0),
-(24670, 1, 'config', 'config_image_popup_width', '500', 0),
-(24668, 1, 'config', 'config_image_thumb_width', '228', 0),
-(24667, 1, 'config', 'config_image_category_height', '80', 0),
-(24666, 1, 'config', 'config_image_category_width', '80', 0),
-(24665, 1, 'config', 'config_icon', '', 0),
-(24664, 1, 'config', 'config_logo', 'data/logo.png', 0),
-(24663, 1, 'config', 'config_cart_weight', '0', 0),
-(24662, 1, 'config', 'config_order_status_id', '7', 0),
-(24661, 1, 'config', 'config_stock_checkout', '0', 0),
-(24660, 1, 'config', 'config_stock_display', '0', 0),
-(24659, 1, 'config', 'config_checkout_id', '0', 0),
-(24658, 1, 'config', 'config_account_id', '0', 0),
-(24657, 1, 'config', 'config_guest_checkout', '0', 0),
-(24656, 1, 'config', 'config_customer_approval', '0', 0),
-(24655, 1, 'config', 'config_customer_price', '0', 0),
-(24654, 1, 'config', 'config_customer_group_id', '8', 0),
-(24653, 1, 'config', 'config_tax_customer', '', 0),
-(24652, 1, 'config', 'config_tax_default', '', 0),
-(24651, 1, 'config', 'config_tax', '0', 0),
-(24650, 1, 'config', 'config_catalog_limit', '12', 0),
-(24649, 1, 'config', 'config_currency', 'USD', 0),
-(24648, 1, 'config', 'config_language', 'en', 0),
-(24647, 1, 'config', 'config_zone_id', '3563', 0),
-(24646, 1, 'config', 'config_country_id', '222', 0),
-(24645, 1, 'config', 'config_layout_id', '4', 0),
-(24644, 1, 'config', 'config_template', 'default', 0),
-(24643, 1, 'config', 'config_meta_description', '', 0),
-(24642, 1, 'config', 'config_title', 'weep', 0),
-(24641, 1, 'config', 'config_fax', '', 0),
-(24640, 1, 'config', 'config_telephone', '98098080', 0),
-(24639, 1, 'config', 'config_email', 'trung@gmail.com', 0),
-(24638, 1, 'config', 'config_address', 'read it and weep', 0),
-(24637, 1, 'config', 'config_owner', 'read it and weep', 0),
-(24636, 1, 'config', 'config_name', 'read it and weep', 0),
-(24635, 1, 'config', 'config_ssl', '', 0),
-(24572, 0, 'config', 'config_account_mail', '0', 0),
-(24573, 0, 'config', 'config_alert_emails', '', 0),
-(24574, 0, 'config', 'config_use_ssl', '0', 0),
-(24575, 0, 'config', 'config_seo_url', '0', 0),
-(24576, 0, 'config', 'config_maintenance', '0', 0),
-(24577, 0, 'config', 'config_encryption', '12345', 0),
-(24578, 0, 'config', 'config_compression', '0', 0),
-(24579, 0, 'config', 'config_error_display', '1', 0),
-(24580, 0, 'config', 'config_error_log', '1', 0),
-(24581, 0, 'config', 'config_error_filename', 'error.txt', 0),
-(24582, 0, 'config', 'config_google_analytics', '', 0),
-(24680, 1, 'config', 'config_image_wishlist_width', '50', 0),
-(24634, 1, 'config', 'config_url', 'http://localhost/constant', 0),
-(24683, 1, 'config', 'config_image_cart_height', '80', 0),
-(24684, 1, 'config', 'config_use_ssl', '0', 0),
+(25461, 0, 'config', 'config_image_additional_width', '142', 0),
+(25460, 0, 'config', 'config_image_product_height', '80', 0),
+(25459, 0, 'config', 'config_image_product_width', '80', 0),
+(25457, 0, 'config', 'config_image_popup_width', '450', 0),
+(25458, 0, 'config', 'config_image_popup_height', '450', 0),
+(25456, 0, 'config', 'config_image_thumb_height', '142', 0),
+(25455, 0, 'config', 'config_image_thumb_width', '142', 0),
+(25454, 0, 'config', 'config_image_category_height', '80', 0),
+(25453, 0, 'config', 'config_image_category_width', '80', 0),
+(25451, 0, 'config', 'config_logo', 'data/logo.png', 0),
+(25452, 0, 'config', 'config_icon', 'data/cart.png', 0),
+(25450, 0, 'config', 'config_cart_weight', '1', 0),
+(25449, 0, 'config', 'config_upload_allowed', 'jpg, JPG, jpeg, gif, png, txt', 0),
+(25448, 0, 'config', 'config_download', '1', 0),
+(25447, 0, 'config', 'config_review_status', '1', 0),
+(25446, 0, 'config', 'config_return_status_id', '2', 0),
+(25445, 0, 'config', 'config_complete_status_id', '5', 0),
+(25444, 0, 'config', 'config_order_status_id', '1', 0),
+(25443, 0, 'config', 'config_stock_status_id', '5', 0),
+(25442, 0, 'config', 'config_stock_checkout', '0', 0),
+(25441, 0, 'config', 'config_stock_warning', '0', 0),
+(25440, 0, 'config', 'config_stock_display', '0', 0),
+(25439, 0, 'config', 'config_commission', '5', 0),
+(25438, 0, 'config', 'config_affiliate_id', '4', 0),
+(25437, 0, 'config', 'config_checkout_id', '5', 0),
+(25436, 0, 'config', 'config_account_id', '3', 0),
+(25435, 0, 'config', 'config_guest_checkout', '1', 0),
+(25434, 0, 'config', 'config_customer_approval', '0', 0),
+(25433, 0, 'config', 'config_customer_price', '0', 0),
+(25432, 0, 'config', 'config_customer_group_id', '8', 0),
+(25431, 0, 'config', 'config_invoice_prefix', 'INV-2011-00', 0),
+(25430, 0, 'config', 'config_tax_customer', 'shipping', 0),
+(25426, 0, 'config', 'config_catalog_limit', '15', 0),
+(25427, 0, 'config', 'config_admin_limit', '20', 0),
+(25428, 0, 'config', 'config_tax', '1', 0),
+(25429, 0, 'config', 'config_tax_default', 'shipping', 0),
+(25425, 0, 'config', 'config_weight_class_id', '1', 0),
+(25424, 0, 'config', 'config_length_class_id', '1', 0),
+(25423, 0, 'config', 'config_currency_auto', '1', 0),
+(25422, 0, 'config', 'config_currency', 'USD', 0),
+(25421, 0, 'config', 'config_admin_language', 'en', 0),
+(25420, 0, 'config', 'config_language', 'en', 0),
+(25419, 0, 'config', 'config_zone_id', '3563', 0),
+(25418, 0, 'config', 'config_country_id', '222', 0),
+(25417, 0, 'config', 'config_layout_id', '4', 0),
+(25416, 0, 'config', 'config_template', 'default', 0),
+(25415, 0, 'config', 'config_meta_description', 'the seventh letter', 0),
+(25414, 0, 'config', 'config_title', 'the seventh letter', 0),
+(25413, 0, 'config', 'config_fax', '', 0),
+(25412, 0, 'config', 'config_telephone', '123456789', 0),
+(25411, 0, 'config', 'config_email', 'trungnguyenthanh70@gmail.com', 0),
 (25012, 0, 'information', 'information_module', 'a:11:{i:0;a:4:{s:9:"layout_id";s:1:"6";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:1;a:4:{s:9:"layout_id";s:2:"10";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:2;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:3;a:4:{s:9:"layout_id";s:1:"7";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:4;a:4:{s:9:"layout_id";s:1:"8";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:5;a:4:{s:9:"layout_id";s:1:"4";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:6;a:4:{s:9:"layout_id";s:1:"1";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:7;a:4:{s:9:"layout_id";s:2:"11";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:8;a:4:{s:9:"layout_id";s:1:"5";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:9;a:4:{s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}i:10;a:4:{s:9:"layout_id";s:1:"9";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}', 1),
 (24860, 0, 'latest', 'latest_module', 'a:1:{i:0;a:7:{s:5:"limit";s:2:"12";s:11:"image_width";s:3:"145";s:12:"image_height";s:3:"145";s:9:"layout_id";s:1:"1";s:8:"position";s:14:"content_bottom";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"2";}}', 1),
 (25010, 0, 'brand', 'brand_module', 'a:11:{i:0;a:4:{s:9:"layout_id";s:1:"6";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:1;a:4:{s:9:"layout_id";s:2:"10";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:2;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:3;a:4:{s:9:"layout_id";s:1:"7";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:4;a:4:{s:9:"layout_id";s:1:"8";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:5;a:4:{s:9:"layout_id";s:1:"4";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:6;a:4:{s:9:"layout_id";s:1:"1";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:7;a:4:{s:9:"layout_id";s:2:"11";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:8;a:4:{s:9:"layout_id";s:1:"5";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:9;a:4:{s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:10;a:4:{s:9:"layout_id";s:1:"9";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}', 1),
@@ -2645,7 +2588,10 @@ INSERT INTO `setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `seria
 (25023, 0, 'cr2htmlmodule', 'cr2htmlmodule_borderless3', '0', 0),
 (25024, 0, 'cr2htmlmodule', 'cr2htmlmodule_code3_1', '', 0),
 (25025, 0, 'cr2htmlmodule', 'cr2htmlmodule_module', 'a:22:{i:0;a:6:{s:7:"area_id";s:5:"area1";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:1;a:6:{s:7:"area_id";s:5:"area1";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:2;a:6:{s:7:"area_id";s:5:"area1";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"2";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:3;a:6:{s:7:"area_id";s:5:"area1";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"8";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:4;a:6:{s:7:"area_id";s:5:"area1";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"5";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:5;a:6:{s:7:"area_id";s:5:"area1";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"6";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:6;a:6:{s:7:"area_id";s:5:"area1";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"7";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:7;a:6:{s:7:"area_id";s:5:"area1";s:9:"classname";s:0:"";s:9:"layout_id";s:2:"11";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:8;a:6:{s:7:"area_id";s:5:"area1";s:9:"classname";s:0:"";s:9:"layout_id";s:2:"10";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:9;a:6:{s:7:"area_id";s:5:"area1";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"9";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:10;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"6";s:8:"position";s:14:"content_social";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:11;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:2:"10";s:8:"position";s:14:"content_social";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:12;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"3";s:8:"position";s:14:"content_social";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:13;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"7";s:8:"position";s:14:"content_social";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:14;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"8";s:8:"position";s:14:"content_social";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:15;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"1";s:8:"position";s:14:"content_social";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:16;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"4";s:8:"position";s:14:"content_social";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:17;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"1";s:8:"position";s:14:"content_social";s:6:"status";s:1:"0";s:10:"sort_order";s:1:"1";}i:18;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:2:"11";s:8:"position";s:14:"content_social";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:19;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"5";s:8:"position";s:14:"content_social";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:20;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"2";s:8:"position";s:14:"content_social";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}i:21;a:6:{s:7:"area_id";s:5:"area2";s:9:"classname";s:0:"";s:9:"layout_id";s:1:"9";s:8:"position";s:14:"content_social";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}', 1),
-(25013, 0, 'cr2htmlmodule', 'cr2htmlmodule_title1_1', 'My accept', 0);
+(25013, 0, 'cr2htmlmodule', 'cr2htmlmodule_title1_1', 'My accept', 0),
+(25410, 0, 'config', 'config_address', 'xxxx', 0),
+(25409, 0, 'config', 'config_owner', 'default', 0),
+(25408, 0, 'config', 'config_name', 'default', 0);
 
 -- --------------------------------------------------------
 
@@ -2688,8 +2634,6 @@ CREATE TABLE IF NOT EXISTS `store` (
 -- Dumping data for table `store`
 --
 
-INSERT INTO `store` (`store_id`, `name`, `url`, `ssl`) VALUES
-(1, 'read it and weep', 'http://localhost/constant', '');
 
 -- --------------------------------------------------------
 

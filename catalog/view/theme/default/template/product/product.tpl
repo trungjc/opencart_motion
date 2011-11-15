@@ -10,6 +10,7 @@
   <div class="header-product">
 	<div class="left-header-product">
 		<h1 class="product-title"><?php echo $heading_title; ?></h1>
+		 
 		<?php if ($price) { ?>
 		<div class="price"><?php echo $text_price; ?>
 		<?php if (!$special) { ?>
@@ -29,9 +30,9 @@
 		<?php } ?>		
 	</div>	
 	<div class="right-header-product">	
-		<ul>
+		<ul class="controlTop">
 			<li>
-				<a href="#" class="button">Details</a>				
+				<a href="#" class="button viewdetail">Details</a>				
 			</li>
 			<li>
 				<a id="button-cart" class="button"><span><?php echo $button_cart; ?></span></a>
@@ -49,8 +50,9 @@
 			</li>			
 		</ul>
 	</div>
+	<div class="break-line">&nbsp;</div>
   </div>
-  <div class="break-line">&nbsp;</div>
+ 
   <div class="product-gallery">
 	<script type="text/javascript">
 		$(document).ready(function() {				
