@@ -26,7 +26,7 @@ echo "<div class='blogNews'>";
 		$item = $rs['items'][$i];
 		echo "<div class='blogItem ".$last."'>";
 		$date = new DateTime($item['pubDate']);
-		echo "<span class='date'>".$date->format('l, F d, Y')."</span>";
+		echo "<span class='pubdate'>".$date->format('l, F d, Y')."</span>";
 		echo "<h2 class='title'>".$item['title']."</h2>";
 		echo "<p class='contentBlog'>";
 		echo substr(strip_tags(html_entity_decode($item['description'])),0,300) . "...";

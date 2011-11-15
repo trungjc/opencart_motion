@@ -31,6 +31,12 @@
 <![endif]--> 
 <script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
 <script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+<!-- galleriffic Jquery -->
+<script type="text/javascript" src="catalog/view/javascript/jquery.galleriffic.js"></script>
+<!-- Optionally include jquery.history.js for history support -->
+<script type="text/javascript" src="catalog/view/javascript/jquery.history.js"></script>
+<script type="text/javascript" src="catalog/view/javascript/jquery.opacityrollover.js"></script>
+
 <?php foreach ($scripts as $script) { ?>
 <script type="text/javascript" src="<?php echo $script; ?>"></script>
 <?php } ?>

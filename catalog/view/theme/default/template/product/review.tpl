@@ -7,5 +7,5 @@
 <?php } ?>
 <div class="pagination"><?php echo $pagination; ?></div>
 <?php } else { ?>
-<div class="content"><?php echo $text_no_reviews; ?></div>
+	<a href="javascript:writeReview()"><?php echo $text_no_reviews; ?></a>
 <?php } ?>
