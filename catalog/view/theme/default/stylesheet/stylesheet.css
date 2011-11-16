@@ -71,6 +71,8 @@ input[type='text'], input[type='password'], textarea {
 	margin-left: 0px;
 	margin-right: 0px;
 }
+
+textarea ,#review-form,#review-form .button{margin:10px 0;}
 select {
 	background: #F8F8F8;
 	border: 1px solid #CCCCCC;
@@ -141,9 +143,9 @@ label {
 	right: 272px;
 	color: #999;
 	line-height: 17px;
-	height: 22px;
+	height: 20px;
 	z-index: 999;
-	background: #ffffff url(../image/Dropbox.png) no-repeat 99% center;
+	background: #ffffff url(../image/Dropbox.png) no-repeat 99% 1px;
 	border: 1px solid #cccccc;
 }
 #currency a {
@@ -157,7 +159,7 @@ label {
 .currency_content {
 	width: 45px;
 	border: 1px solid #cccccc;
-	margin-top:0px;
+	margin-top:-3px;
 	background: #ffffff;
 	margin-left: -1px;
 	display: none;
@@ -705,6 +707,7 @@ a.button:hover span {
 }
 .box-content .box-category  ul  ul li{
 	  background:none;
+	  padding: 6px 6px 6px 15px;
 	
 }
 #column-left .box-content,#column-left  .box-content ul{
@@ -715,12 +718,15 @@ a.button:hover span {
 	
 }
 .box .box-content {
-	background: #FFFFFF;
 	-webkit-border-radius: 0px 0px 7px 7px;
 	-moz-border-radius: 0px 0px 7px 7px;
 	-khtml-border-radius: 0px 0px 7px 7px;
 	border-radius: 0px 0px 7px 7px;
 	padding: 10px;
+}
+.buttons .left,.buttons .center,.buttons .right {
+	float:left;
+	margin: 0 5px 0 0;
 }
 /* box products */
 .box-product {
@@ -2191,7 +2197,8 @@ h1.product-title,h1.embedfont{
 	padding: 0;
 }
 .product-gallery {overflow:hidden;}
-.product-desc {width:100%;}
+.product-desc {width:100%;line-height: 20px;}
+.product-review {margin: 20px 0;}
 .product-desc h2 {color:#1f1f1f;margin:10px 0;}
 .product-gallery ul.thumbs li {
 	float: none;
@@ -2259,32 +2266,30 @@ h1.product-title,h1.embedfont{
 	padding: 5px 30px 5px 5px;
 }
 
-.buttons .left, .buttons .right,.buttons .center{
-	float:left;
-	margin-right: 5px;
-
-}
+#captcha{vertical-align:middle;}
 .header-product{
 	width:100%;
 	position:relative;
+	overflow:hidden;
 }
 .header-product .left-header-product{
 	float:left;
-	width:50%;
 }
 .header-product .left-header-product .product-title{
 	float:left;
 	padding:0 10px 0 0;
+	margin:0;
 }
 .header-product .left-header-product .price{
 	font-size:15px;
 	font-weight:bold;
 	color:#666;
-	padding:15px;
+	float:left;
+	margin-top: 15px;
+	padding: 0 0 0 10px;
 }
 .header-product .right-header-product{
-	float:left;
-	width:50%;
+	float:right;
 }
 .header-product .right-header-product .controlTop{
 	list-style-type:none;
@@ -2295,7 +2300,7 @@ h1.product-title,h1.embedfont{
 	display:inline-block;
 }
 .header-product .right-header-product .controlTop li.fb-like{
-	width:88px;
+	width:46px;
 }
 #review a{
 	text-transform:uppercase;
@@ -2304,13 +2309,14 @@ h1.product-title,h1.embedfont{
 }
 .prduct-cart{
 	width:100%;
-	margin:30px 0 30px 0;
+	margin:0px 0 30px 0;
 	float:left;
 }
 .product-option h2,.product-code .pcode,.product-addtocart span.label{
 	text-transform:uppercase;
 	color:#1f1f1f;
 	font-weight:bold;	
+	margin-bottom: 12px;
 }
 .product-option,.product-code,.product-addtocart{
 	float:left;
@@ -2322,25 +2328,26 @@ h1.product-title,h1.embedfont{
 	margin-right: 20px;
 }
 .product-addtocart #button-cart{	
-	height:34px;
-	width:130px;
-	padding:20px;
-	font-size:12px;
-	text-transform:uppercase;
-	font-weight:bold;
+    font-size: 12px;
+    font-weight: bold;
+    height: 52px;
+    line-height: 52px;
+    margin-top: 0px;
+    padding: 0 6px;
+    text-transform: uppercase;
+    width: 130px;
 }
 .product-code .instock{
 	padding: 5px;
 	background:#1f1f1f;
 	color:#FFF;
 	text-transform:uppercase;
-	margin: 5px 0 0 0;
+	margin: 8px 0 0 0;
 	text-align:center;
 	font-weight:bold;
 }
 .product-addtocart span.label{
 	display:block;
-	height:3px;
 }
 .brand-image img{
 	width:321px;

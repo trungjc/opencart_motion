@@ -31,9 +31,9 @@
 	</div>	
 	<div class="right-header-product">	
 		<ul class="controlTop">
-			<li class="btt-detail">
+			<!--li class="btt-detail">
 				<a href="#" class="button viewdetail">Details</a>				
-			</li>
+			</li-->
 			<li class="btt-addtocart">
 				<a id="button-cart" class="button"><span><?php echo $button_cart; ?></span></a>
 			</li>
@@ -50,9 +50,9 @@
 			</li>			
 		</ul>
 	</div>
-	<div class="break-line">&nbsp;</div>
+	
   </div>
- 
+ <div class="break-line">&nbsp;</div>
   <div class="product-gallery">
 	<script type="text/javascript">
 		$(document).ready(function() {				
@@ -322,7 +322,7 @@
    </div>
    <div class="product-addtocart">
       <div class="cart">
-        <div class="quantity"><span class="label"><?php echo $text_qty; ?></span><br />
+        <div class="quantity"><span class="label"><?php echo $text_qty; ?></span>
           <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
           <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />          
 		</div>
@@ -361,13 +361,28 @@ $('#button-cart').bind('click', function() {
 			}	 
 						
 			if (json['success']) {
-				$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+				$('#notification').html('<div class="attention" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
 					
-				$('.success').fadeIn('slow');
+				$('.attention').fadeIn('slow');
 					
 				$('#cart_total').html(json['total']);
-				
-				$('html, body').animate({ scrollTop: 0 }, 'slow'); 
+								
+				var image = $('#image').offset();
+				var cart  = $('#cart').offset();
+	
+				$('#image').before('<img src="' + $('#image').attr('src') + '" id="temp" style="position: absolute; top: ' + image.top + 'px; left: ' + image.left + 'px;" />');
+	
+				params = {
+					top : cart.top + 'px',
+					left : cart.left + 'px',
+					opacity : 0.0,
+					width : $('#cart').width(),  
+					height : $('#cart').height()
+				};		
+	
+				$('#temp').animate(params, 'slow', false, function () {
+					$('#temp').remove();
+				});		
 			}	
 		}
 	});
@@ -467,4 +482,16 @@ $('.datetime').datetimepicker({
 });
 $('.time').timepicker({timeFormat: 'h:m'});
 //--></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+$('ul.thumbs li').hide();
+$('ul.thumbs li').each(function(i){
+if(i<3) $('ul.thumbs li:eq('+i+')').show();
+})
+
+
+})
+
+
+</script>
 <?php echo $footer; ?>

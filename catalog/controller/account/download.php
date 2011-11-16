@@ -108,16 +108,15 @@ class ControllerAccountDownload extends Controller {
 				$this->template = 'default/template/account/download.tpl';
 			}
 			
-				$this->children = array(
+			$this->children = array(
 			'common/column_left',
 			'common/column_right',
 			'common/content_top',
 			'common/content_social',
 			'common/content_bottom',
 			'common/footer',
-			'common/header'		
+			'common/header'	
 		);
-					
 							
 			$this->response->setOutput($this->render());				
 		} else {
@@ -136,13 +135,14 @@ class ControllerAccountDownload extends Controller {
 			}
 			
 			$this->children = array(
-				'common/column_left',
-				'common/column_right',
-				'common/content_top',
-				'common/content_bottom',
-				'common/footer',
-				'common/header'		
-			);
+			'common/column_left',
+			'common/column_right',
+			'common/content_top',
+			'common/content_social',
+			'common/content_bottom',
+			'common/footer',
+			'common/header'	
+		);
 										
 			$this->response->setOutput($this->render());
 		}
@@ -168,29 +168,30 @@ class ControllerAccountDownload extends Controller {
 		if ($download_info) {
 			$file = DIR_DOWNLOAD . $download_info['filename'];
 			$mask = basename($download_info['mask']);
+			$mime = 'application/octet-stream';
+			$encoding = 'binary';
 
 			if (!headers_sent()) {
 				if (file_exists($file)) {
-					header('Content-Description: File Transfer');
-					header('Content-Type: application/octet-stream');
-					header('Content-Disposition: attachment; filename="' . ($mask ? $mask : basename($file)) . '"');
-					header('Content-Transfer-Encoding: binary');
-					header('Expires: 0');
-					header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
 					header('Pragma: public');
+					header('Expires: 0');
+					header('Content-Description: File Transfer');
+					header('Content-Type: ' . $mime);
+					header('Content-Transfer-Encoding: ' . $encoding);
+					header('Content-Disposition: attachment; filename=' . ($mask ? $mask : basename($file)));
 					header('Content-Length: ' . filesize($file));
-					
-					readfile($file, 'rb');
-					
-					$this->model_account_download->updateRemaining($this->request->get['order_download_id']);
-					
-					exit;
+				
+					$file = readfile($file, 'rb');
+				
+					print($file);
 				} else {
 					exit('Error: Could not find file ' . $file . '!');
 				}
 			} else {
 				exit('Error: Headers already sent out!');
 			}
+		
+			$this->model_account_download->updateRemaining($this->request->get['order_download_id']);
 		} else {
 			$this->redirect($this->url->link('account/download', '', 'SSL'));
 		}
