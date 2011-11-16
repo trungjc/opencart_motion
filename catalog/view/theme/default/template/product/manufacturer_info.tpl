@@ -14,19 +14,27 @@
 		<img src="image/<?=$brand_image?>" alt="<?=$heading_title?>" />		
 	</div>		  
 	<div class="box-product box-product-featured half">
-				<div class="box-item">
-					<div class="image"><a href="http://localhost:8080/constant_motion/index.php?route=product/product&amp;product_id=34"><img src="http://localhost:8080/constant_motion/image/cache/data/sample-product-323x275.jpg" alt="Lust"></a></div>
-					<div class="item-info">
-				<div class="name"><a href="http://localhost:8080/constant_motion/index.php?route=product/product&amp;product_id=34">Lust</a></div>
-							<div class="price">
-							  $49.00			  			</div>
-										<div class="details"><a href="http://localhost:8080/constant_motion/index.php?route=product/product&amp;product_id=34">Details</a></div>
-				<div class="cart"><a onclick="addToCart('34');" class="button"><span>Add to Cart</span></a></div>
-			</div>
-		  </div>
+	<?php
+		$firstProduct=0;
+	?>
+		  <?php if ($products) { ?>
+			  <?php foreach ($products as $product) { 
+					$firstProduct=$product['product_id']; ?>
+					<div class="box-item">
+							<div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['product_image']; ?>" alt="Lust"></a></div>
+							<div class="item-info">
+						<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+									<div class="price">
+									  $49.00			  			</div>
+												<div class="details"><a href="<?php echo $product['href']; ?>">Details</a></div>
+						<div class="cart"><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span>Add to Cart</span></a></div>
+						</div>
+					</div>				
+			  <?php break; } ?>
+		  <?php } ?>
 	</div>
 	<div class="brand-info">
-		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat	
+		
 	</div>	
   </div>  
   <?php if ($products) { ?>
@@ -55,35 +63,37 @@
       </select>
     </div>
   </div>
-  <div class="product-compare"><a href="<?php echo $compare; ?>" id="compare_total"><?php echo $text_compare; ?></a></div>
-  <div class="product-list">
+  <!--<div class="product-compare"><a href="<?php echo $compare; ?>" id="compare_total"><?php echo $text_compare; ?></a></div>-->
+   <div class="list-grid-product box-product box-product-latest">
     <?php foreach ($products as $product) { ?>
-    <div>
-      <?php if ($product['thumb']) { ?>
-      <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
-      <?php } ?>
-      <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-      <div class="description"><?php echo $product['description']; ?></div>
-      <?php if ($product['price']) { ?>
-      <div class="price">
-        <?php if (!$product['special']) { ?>
-        <?php echo $product['price']; ?>
-        <?php } else { ?>
-        <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new"><?php echo $product['special']; ?></span>
-        <?php } ?>
-        <?php if ($product['tax']) { ?>
-        <br />
-        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-        <?php } ?>
+		<?php 	if($product['product_id'] != $firstProduct){	?>
+
+      <div class="box-item">
+        <?php if ($product['thumb']) { ?>
+        <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
+        <?php } 
+		else{ ?>
+		<div class="image"><a href="<?php echo $product['href']; ?>"><img src="image/data/logo.png" alt="<?php echo $product['name']; ?>" /></a></div>
+		<?php } ?>
+		<div class="item-info">
+			<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+			<?php if ($product['price']) { ?>
+			<div class="price">
+			  <?php if (!$product['special']) { ?>
+			  <?php echo $product['price']; ?>
+			  <?php } else { ?>
+			  <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new"><?php echo $product['special']; ?></span>
+			  <?php } ?>
+			</div>
+			<?php } ?>
+			<?php if ($product['rating']) { ?>
+			<div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
+			<?php } ?>
+			<div class="cart"><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a></div>
+		</div>
       </div>
-      <?php } ?>
-      <?php if ($product['rating']) { ?>
-      <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
-      <?php } ?>
-      <div class="cart"><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a></div>
-      <div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a></div>
-      <div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>
-    </div>
+	  
+		<?php } ?>
     <?php } ?>
   </div>
   <div class="pagination"><?php echo $pagination; ?></div>

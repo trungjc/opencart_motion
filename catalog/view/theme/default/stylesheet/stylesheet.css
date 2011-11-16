@@ -747,7 +747,6 @@ a.button:hover span {
 }
 .box-product .name a {
 	color: #38B0E3;
-	font-weight: bold;
 	text-decoration: none;
 	display: block;
 	margin-bottom: 4px;
@@ -1759,6 +1758,7 @@ a.button:hover span {
 	position:relative;
 	margin:0;
 	padding:0;
+	overflow: hidden;
 }
 .box-product-featured .box-item .image{
 	width:325px;
@@ -1959,7 +1959,7 @@ color: #FFFFFF;
 .header-brand{
 	float: left;
 	width: 100%;
-	position:relatvie;
+	margin: 0 0 40px 0;
 }
 .brand-image{
 	float:left;
@@ -2106,6 +2106,10 @@ h1.product-title,h1.embedfont{
 }
 .product-gallery div.controls a {
 	padding: 5px;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#666;
+	font-size:12px;
 }
 .product-gallery div.ss-controls {
 	float: left;
@@ -2194,6 +2198,8 @@ h1.product-title,h1.embedfont{
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	width:145px;
+	height:145px;
 }
 .product-gallery a.thumb {
 	padding: 0;
@@ -2210,6 +2216,7 @@ h1.product-title,h1.embedfont{
 .product-gallery ul.thumbs img {
 	border: none;
 	display: block;
+	width:145px;
 }
 .product-gallery div.pagination {
 	clear: both;
@@ -2256,4 +2263,88 @@ h1.product-title,h1.embedfont{
 	float:left;
 	margin-right: 5px;
 
+}
+.header-product{
+	width:100%;
+	position:relative;
+}
+.header-product .left-header-product{
+	float:left;
+	width:50%;
+}
+.header-product .left-header-product .product-title{
+	float:left;
+	padding:0 10px 0 0;
+}
+.header-product .left-header-product .price{
+	font-size:15px;
+	font-weight:bold;
+	color:#666;
+	padding:15px;
+}
+.header-product .right-header-product{
+	float:left;
+	width:50%;
+}
+.header-product .right-header-product .controlTop{
+	list-style-type:none;
+}
+.header-product .right-header-product .controlTop li{
+	float:left;
+	margin:30px 0 0 10px;
+	display:inline-block;
+}
+.header-product .right-header-product .controlTop li.fb-like{
+	width:88px;
+}
+#review a{
+	text-transform:uppercase;
+	color:#cc0000;
+	font-weight:bold;
+}
+.prduct-cart{
+	width:100%;
+	margin:30px 0 30px 0;
+	float:left;
+}
+.product-option h2,.product-code .pcode,.product-addtocart span.label{
+	text-transform:uppercase;
+	color:#1f1f1f;
+	font-weight:bold;	
+}
+.product-option,.product-code,.product-addtocart{
+	float:left;
+	margin: 0 20px 0 0;
+	padding:0;
+}
+.product-option,.product-code,.product-addtocart .quantity{
+	float:left;
+	margin-right: 20px;
+}
+.product-addtocart #button-cart{	
+	height:34px;
+	width:130px;
+	padding:20px;
+	font-size:12px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.product-code .instock{
+	padding: 5px;
+	background:#1f1f1f;
+	color:#FFF;
+	text-transform:uppercase;
+	margin: 5px 0 0 0;
+	text-align:center;
+	font-weight:bold;
+}
+.product-addtocart span.label{
+	display:block;
+	height:3px;
+}
+.brand-image img{
+	width:321px;
+}
+.list-grid-product {
+	margin: 40px 0;
 }
