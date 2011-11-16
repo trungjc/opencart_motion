@@ -166,7 +166,7 @@ function display(view) {
 			}
 			html += '<div class="item-info">';
 			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
-			//html += '<div class="description">' + $(element).find('.description').html() + '</div>';
+			html += '<div class="description" style="display:none;">' + $(element).find('.description').html() + '</div>';
 			
 			var price = $(element).find('.price').html();
 			
@@ -182,8 +182,8 @@ function display(view) {
 			html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
 			html += '</div>';		
 			
-			//html += '<div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
-			//html += '<div class="compare">' + $(element).find('.compare').html() + '</div>';
+			html += '<div class="wishlist" style="display:none;">' + $(element).find('.wishlist').html() + '</div>';
+			html += '<div class="compare" style="display:none;">' + $(element).find('.compare').html() + '</div>';
 			
 			$(element).html(html);
 		});	
