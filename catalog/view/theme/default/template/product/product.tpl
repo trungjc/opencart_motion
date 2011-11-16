@@ -35,7 +35,7 @@
 				<a href="#" class="button viewdetail">Details</a>				
 			</li>
 			<li class="btt-addtocart">
-				<a id="button-cart" class="button"><span><?php echo $button_cart; ?></span></a>
+				<a id="button-cart" class="button button-cart"><span><?php echo $button_cart; ?></span></a>
 			</li>
 			<li class="fb-like">
 			<div id="fb-root"></div>
@@ -165,7 +165,7 @@
 	  </div>
 	  <?php } ?>	
   </div>
-  <div class="prduct-cart">
+  <div class="prduct-cart product-info">
 	<div class="product-option">
       <?php if ($options) { ?>
       <div class="options">
@@ -317,7 +317,7 @@
    <div class="product-code">
 	<div class="pcode"><?php echo $text_model; ?> <?php echo $model; ?></div>
 	<div class="instock">
-		<span><?=$quantity?> in stock</span>
+		<span><?=$quantity?> in stock</span>f
 	</div>
    </div>
    <div class="product-addtocart">
@@ -326,7 +326,7 @@
           <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
           <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />          
 		</div>
-		<a id="button-cart" class="button"><span><?php echo $button_cart; ?></span></a>
+		<a id="button-cart" class="button button-cart"><span><?php echo $button_cart; ?></span></a>
         <?php if ($minimum > 1) { ?>
         <div class="minimum"><?php echo $text_minimum; ?></div>
         <?php } ?>
@@ -339,7 +339,7 @@
 $('.fancybox').fancybox({cyclic: true});
 //--></script> 
 <script type="text/javascript"><!--
-$('#button-cart').bind('click', function() {
+$('.button-cart').bind('click', function() {
 	$.ajax({
 		url: 'index.php?route=checkout/cart/update',
 		type: 'post',
