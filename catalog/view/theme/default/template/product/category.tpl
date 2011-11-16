@@ -1,11 +1,11 @@
 <?php echo $header; ?><?php echo $content_top; ?><div class="bg_panel socialbox"><?php echo $content_social; ?></div>
 <div class="line-space"></div><?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content">
-  <div class="breadcrumb">
+  <!--<div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
-  </div>
+  </div>-->
   <h1><?php echo $heading_title; ?></h1>
   <?php if ($thumb || $description) { ?>
   <div class="category-info">
@@ -69,10 +69,13 @@
   <div class="product-compare"><a href="<?php echo $compare; ?>" id="compare_total"><?php echo $text_compare; ?></a></div>
   <div class="product-list">
     <?php foreach ($products as $product) { ?>
-    <div>
+    <div class="box-item">
       <?php if ($product['thumb']) { ?>
       <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
-      <?php } ?>
+      <?php }
+	  		else{ ?>
+		<div class="image"><a href="<?php echo $product['href']; ?>"><img src="image/data/logo.png" alt="<?php echo $product['name']; ?>" /></a></div>
+		<?php } ?>
       <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
       <div class="description"><?php echo $product['description']; ?></div>
       <?php if ($product['price']) { ?>
@@ -83,8 +86,8 @@
         <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new"><?php echo $product['special']; ?></span>
         <?php } ?>
         <?php if ($product['tax']) { ?>
-        <br />
-        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
+        <!--<br />
+        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>-->
         <?php } ?>
       </div>
       <?php } ?>
@@ -109,9 +112,9 @@
 <script type="text/javascript"><!--
 function display(view) {
 	if (view == 'list') {
-		$('.product-grid').attr('class', 'product-list');
+		$('.list-grid-product').attr('class', 'product-list');
 		
-		$('.product-list > div').each(function(index, element) {
+		$('.product-list > div.box-item').each(function(index, element) {
 			html  = '<div class="right">';
 			html += '  <div class="cart">' + $(element).find('.cart').html() + '</div>';
 			html += '  <div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
@@ -151,9 +154,9 @@ function display(view) {
 		
 		$.cookie('display', 'list'); 
 	} else {
-		$('.product-list').attr('class', 'product-grid');
+		$('.product-list').attr('class', 'list-grid-product box-product box-product-latest');
 		
-		$('.product-grid > div').each(function(index, element) {
+		$('.list-grid-product > div.box-item').each(function(index, element) {
 			html = '';
 			
 			var image = $(element).find('.image').html();
@@ -161,9 +164,9 @@ function display(view) {
 			if (image != null) {
 				html += '<div class="image">' + image + '</div>';
 			}
-			
+			html += '<div class="item-info">';
 			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
-			html += '<div class="description">' + $(element).find('.description').html() + '</div>';
+			//html += '<div class="description">' + $(element).find('.description').html() + '</div>';
 			
 			var price = $(element).find('.price').html();
 			
@@ -176,10 +179,11 @@ function display(view) {
 			if (rating != null) {
 				html += '<div class="rating">' + rating + '</div>';
 			}
-						
 			html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
-			html += '<div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
-			html += '<div class="compare">' + $(element).find('.compare').html() + '</div>';
+			html += '</div>';		
+			
+			//html += '<div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
+			//html += '<div class="compare">' + $(element).find('.compare').html() + '</div>';
 			
 			$(element).html(html);
 		});	

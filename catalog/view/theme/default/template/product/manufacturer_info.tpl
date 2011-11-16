@@ -25,7 +25,7 @@
 							<div class="item-info">
 						<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
 									<div class="price">
-									  $49.00			  			</div>
+									 <?php echo $product['price']; ?>			  			</div>
 												<div class="details"><a href="<?php echo $product['href']; ?>">Details</a></div>
 						<div class="cart"><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span>Add to Cart</span></a></div>
 						</div>
